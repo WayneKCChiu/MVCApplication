@@ -207,6 +207,7 @@
     <Compile Include="Models\sysdiagrams.cs">
       <DependentUpon>CustomerData.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\其中必須有一個dash.cs" />
     <Compile Include="Models\客戶聯絡人.cs">
       <DependentUpon>CustomerData.tt</DependentUpon>
     </Compile>

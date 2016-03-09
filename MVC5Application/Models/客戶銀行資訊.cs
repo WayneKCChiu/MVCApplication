@@ -9,19 +9,26 @@
 
 namespace MVC5Application.Models
 {
-    using System;
-    using System.Collections.Generic;
-    
-    public partial class 客戶銀行資訊
-    {
-        public int Id { get; set; }
-        public int 客戶Id { get; set; }
-        public string 銀行名稱 { get; set; }
-        public int 銀行代碼 { get; set; }
-        public Nullable<int> 分行代碼 { get; set; }
-        public string 帳戶名稱 { get; set; }
-        public string 帳戶號碼 { get; set; }
-    
-        public virtual 客戶資料 客戶資料 { get; set; }
-    }
+   using System;
+   using System.Collections.Generic;
+   using System.ComponentModel.DataAnnotations;
+   public partial class 客戶銀行資訊
+   {
+      public int Id { get; set; }
+      [Required]
+      public int 客戶Id { get; set; }
+      [Required]
+      public string 銀行名稱 { get; set; }
+      [Required]
+      public int 銀行代碼 { get; set; }
+      [Required]
+      public Nullable<int> 分行代碼 { get; set; }
+      [Required]
+      public string 帳戶名稱 { get; set; }
+      [Required]
+      public string 帳戶號碼 { get; set; }
+      public bool IsDelete { get; set; }
+
+      public virtual 客戶資料 客戶資料 { get; set; }
+   }
 }
